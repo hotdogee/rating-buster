@@ -1,0 +1,52 @@
+RatingBuster - 裝備數值解析與比較
+
+**********
+** 下載 **
+**********
+http://files.wowace.com/RatingBuster/RatingBuster.zip
+http://wow-en.curse-gaming.com/files/details/4991/ratingbuster/
+http://www.wowinterface.com/downloads/fileinfo.php?id=5819
+
+**********
+** 圖例 **
+**********
+屬性解析 - http://img133.imageshack.us/img133/180/statbustertwut4.jpg
+屬性統計 - http://img524.imageshack.us/img524/2986/statsummarytwtj3.jpg
+設定選項 - http://img133.imageshack.us/img133/4131/ratingbusteroptionstwwx6.jpg
+
+
+**********
+** 功能 **
+**********
+
+- 支援所有職業的天賦與狀態加成。
+
+- 可自己選擇要顯示哪些資料。
+
+- 屬性等級轉換：
+  將屬性等級轉換成百分比顯示。
+
+- 基本屬性解析：
+  - 將力量、敏捷、耐力、智力、精神解析成低階屬性。
+  - 支援各職業影響屬性的天賦與狀態加成。
+  - 例：天賦：月神引導 - 使你的法術傷害和治療效果提高相當於你總智力的8%/16%/25%。
+        天賦：野性之心 - 使你的智力提高4%/8%/12%/16%/20%。.....
+        智力解析：+13智力 (+234法力, +0.18% 法術致命, +3.9 法傷)
+
+- 屬性統計：
+  - 在物品提示裡顯示該物品的屬性加總，亦可顯示與目前裝備物品的屬性差異值。
+  - 可自訂屬性統計裡要顯示哪些屬性。
+  - 支援各職業影響屬性的天賦與狀態加成。
+  - 高階屬性會換算成低階屬性一起加總，例如法術致命會包含來自寶石、附魔與物品本身的「智力」與「法術致命一擊等級」所給的法術致命。
+  - 德魯伊的野性攻擊強度會根據目前的型態而變換。
+
+- 物品等級與物品編號
+
+**********
+** 設定 **
+**********
+
+- 在遊戲內打/rb可以觀看選項
+
+- RatingBuster沒有內建圖形介面，如果覺得設定苦手，
+  建議使用 Niagara (下載: http://files.wowace.com/Niagara/Niagara.zip)

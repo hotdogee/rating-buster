@@ -1,19 +1,24 @@
-# RatingBuster - A tool for item comparison
+RatingBuster - A tool for item comparison
 
-Item stat breakdown, analysis and comparison
-
-# About RatingBuster
+************************
+** About RatingBuster **
+************************
 
 RatingBuster started out as an addon that converts combat ratings in your tooltips into percentages, so that you have more meaningful information when comparing different items.
 
 The design aim of RatingBuster is to provide detailed, meaningful and customizable information about items so you can easily decide for yourself which item is better.
 
-# Support Modules
+
+*********************
+** Support Modules **
+*********************
 
 - RatingBuster_AlwaysBuffed: http://wow.curse.com/downloads/wow-addons/details/ratingbuster-alwaysbuffed.aspx
   This addon enables RatingBuster to calculate selected buff effects even if you don't really have them.
 
-# Features
+**************
+** Features **
+**************
 
 - Rating Conversion:
   Converts combat ratings into percentages.
@@ -37,7 +42,10 @@ The design aim of RatingBuster is to provide detailed, meaningful and customizab
 
 - Fully customizable, decide what you need to see and what you don't want.
 
-# Auto fill gems in empty sockets
+
+*************************************
+** Auto fill gems in empty sockets **
+*************************************
 
 1. You can set the default gems for each type of empty socket using "/rabu sum gem <red|yellow|blue|meta> <ItemID|Link>" or using the options window.
 2. To specify the gem of your choice, you will need to give RatingBuster the ItemLink or the ItemID of the gem.
@@ -53,7 +61,9 @@ Note4: Empty sockets filled by RatingBuster will keep the "Empty Socket Icon" so
 Note5: Gem text filled by RatingBuster will be shown in gray color to differentiate from real gems.
 
 
-# Supported Addons
+**********************
+** Supported Addons **
+**********************
 
 EquipCompare, EQCompare, tekKompare,
 LinkWrangler, MultiTips, Links,
@@ -63,67 +73,73 @@ LinkHeaven, Mirror, TooltipExchange, AtlasQuest.
 Also works with all bag mods!
 
 
-# GUI Options Window
+************************
+** GUI Options Window **
+************************
 
 Type /rabu win
 
 
-# Slash Commands
+********************
+** Slash Commands **
+********************
 
 Use: /rabu or /ratingbuster
 
-* **/rabu** : Display command help
-* **/rabu standby** : Toggle disable/enable RatingBuster in game, defaults Enable
-* **/rabu level (0-83)** : Set the level used in calculations, defaults 0 (0 = your level)
-* **/rabu itemlevel** : Toggle show/hide ItemLevel, defaults Show
-* **/rabu itemid** : Toggle show/hide ItemID, defaults Hide
-* **/rabu usereqlv** : Toggle calculate using the required level if you are below the required level, defaults Off
-* **/rabu statmod** : Toggle support for talent and buff mods, defaults On
-* **/rabu avoidancedr** : Dodge, Parry, Hit Avoidance values will be calculated using the avoidance deminishing return formula with your current stats, defaults On
+/rabu : Display command help
+/rabu standby : Toggle disable/enable RatingBuster in game, defaults Enable
+/rabu level (0-83) : Set the level used in calculations, defaults 0 (0 = your level)
+/rabu itemlevel : Toggle show/hide ItemLevel, defaults Show
+/rabu itemid : Toggle show/hide ItemID, defaults Hide
+/rabu usereqlv : Toggle calculate using the required level if you are below the required level, defaults Off
+/rabu statmod : Toggle support for talent and buff mods, defaults On
+/rabu avoidancedr : Dodge, Parry, Hit Avoidance values will be calculated using the avoidance deminishing return formula with your current stats, defaults On
 
-* **/rabu rating** : Options for Rating Conversion
-* **/rabu rating show** : Toggle show/hide Rating Conversion in tooltips, defaults Show
-* **/rabu rating def** : Toggle Defense breakdown, Convert Defense into Crit Avoidance, Hit Avoidance, Dodge, Parry and Block, defaults Off
-* **/rabu rating wpn** : Toggle Weapon Skill breakdown, Convert Weapon Skill into Crit, Hit, Dodge Neglect, Parry Neglect and Block Neglect, defaults Off
-* **/rabu rating color enable** : Toggle enable/disable colored text, defaults On
-* **/rabu rating color pick** : Choose a color for the added text, defaults Light Yellow
-* **/rabu rating spell** : Show Spell Hit from Hit Rating
-* **/rabu rating physical** : Show Physical Hit from Hit Rating
-* **/rabu rating detail** : Show detailed text for Resiliance and Expertise conversions
-* **/rabu rating exp** : Convert Expertise into Dodge Neglect and Parry Neglect
+/rabu rating : Options for Rating Conversion
+/rabu rating show : Toggle show/hide Rating Conversion in tooltips, defaults Show
+/rabu rating def : Toggle Defense breakdown, Convert Defense into Crit Avoidance, Hit Avoidance, Dodge, Parry and Block, defaults Off
+/rabu rating wpn : Toggle Weapon Skill breakdown, Convert Weapon Skill into Crit, Hit, Dodge Neglect, Parry Neglect and Block Neglect, defaults Off
+/rabu rating color enable : Toggle enable/disable colored text, defaults On
+/rabu rating color pick : Choose a color for the added text, defaults Light Yellow
+/rabu rating spell : Show Spell Hit from Hit Rating
+/rabu rating physical : Show Physical Hit from Hit Rating
+/rabu rating detail : Show detailed text for Resiliance and Expertise conversions
+/rabu rating exp : Convert Expertise into Dodge Neglect and Parry Neglect
 
-* **/rabu stat** : Options for Stat Breakdown
-* **/rabu stat show** : Toggle show/hide Stat Breakdown in tooltips, defaults Show
-* **/rabu stat str** : Options for Strength breakdown -> AP, Block, Healing(Talent)
-* **/rabu stat agi** : Options for Agility breakdown -> Crit, Dodge, AP, RAP, Armor
-* **/rabu stat sta** : Options for Stamina breakdown -> Health, SpellDmg(Talent)
-* **/rabu stat int** : Options for Intellect breakdown -> Mana, SpellCrit, SpellDmg(Talent), Healing(Talent), MP5(Talent), RAP(Talent), Armor(Talent)
-* **/rabu stat spi** : Options for Spirit breakdown -> MP5(Talent), MP5NC, HP5, SpellDmg(Talent), Healing(Talent)
+/rabu stat : Options for Stat Breakdown
+/rabu stat show : Toggle show/hide Stat Breakdown in tooltips, defaults Show
+/rabu stat str : Options for Strength breakdown -> AP, Block, Healing(Talent)
+/rabu stat agi : Options for Agility breakdown -> Crit, Dodge, AP, RAP, Armor
+/rabu stat sta : Options for Stamina breakdown -> Health, SpellDmg(Talent)
+/rabu stat int : Options for Intellect breakdown -> Mana, SpellCrit, SpellDmg(Talent), Healing(Talent), MP5(Talent), RAP(Talent), Armor(Talent)
+/rabu stat spi : Options for Spirit breakdown -> MP5(Talent), MP5NC, HP5, SpellDmg(Talent), Healing(Talent)
 
-* **/rabu sum** : Options for Stat Summary
-* **/rabu sum show** : Toggle show/hide Stat Summary in tooltips, defaults Show
-* **/rabu sum ignore unused** : Show stat summary only for armor types you will and can use, and on items with uncommon quality and up, defaults On
-* **/rabu sum ignore equipped** : Hide stat summary for equipped items, defaults Off
-* **/rabu sum ignore enchant** : Ignore enchants on items when calculating the stat summary, defaults Off
-* **/rabu sum ignore gem** : Ignore gems on items when calculating the stat summary, defaults Off
-* **/rabu sum diffstyle** : Display diff values in the main tooltip or only in compare tooltips, defaults Main
-* **/rabu sum space before** : Add a blank line before stat summary for readability, defaults On
-* **/rabu sum space after** : Add a blank line after stat summary, defaults Off
-* **/rabu sum icon** : Show the sigma icon before summary listing, defaults On
-* **/rabu sum title** : Show the title text before summary listing, defaults On
-* **/rabu sum showzerostat** : Show zero value stats in summary for consistency, defaults Off
-* **/rabu sum calcsum** : Calculate the total stats for the item, defaults On
-* **/rabu sum calcdiff** : Calculate the stat difference for the item and equipped items, defaults On
-* **/rabu sum sort** : Enable to sort StatSummary alphabetically, disable to sort according to stat type(basic, physical, spell, tank)
-* **/rabu sum avoidhasblock** : Enable to include block chance in Avoidance summary, Disable for only dodge, parry, miss
-* **/rabu sum basic** : Choose basic stats for summary
-* **/rabu sum physical** : Choose physical stats for summary
-* **/rabu sum spell** : Choose spell stats for summary
-* **/rabu sum tank** : Choose tank stats for summary
-* **/rabu sum gem** : Auto fill gems in empty sockets
+/rabu sum : Options for Stat Summary
+/rabu sum show : Toggle show/hide Stat Summary in tooltips, defaults Show
+/rabu sum ignore unused : Show stat summary only for armor types you will and can use, and on items with uncommon quality and up, defaults On
+/rabu sum ignore equipped : Hide stat summary for equipped items, defaults Off
+/rabu sum ignore enchant : Ignore enchants on items when calculating the stat summary, defaults Off
+/rabu sum ignore gem : Ignore gems on items when calculating the stat summary, defaults Off
+/rabu sum diffstyle : Display diff values in the main tooltip or only in compare tooltips, defaults Main
+/rabu sum space before : Add a blank line before stat summary for readability, defaults On
+/rabu sum space after : Add a blank line after stat summary, defaults Off
+/rabu sum icon : Show the sigma icon before summary listing, defaults On
+/rabu sum title : Show the title text before summary listing, defaults On
+/rabu sum showzerostat : Show zero value stats in summary for consistency, defaults Off
+/rabu sum calcsum : Calculate the total stats for the item, defaults On
+/rabu sum calcdiff : Calculate the stat difference for the item and equipped items, defaults On
+/rabu sum sort : Enable to sort StatSummary alphabetically, disable to sort according to stat type(basic, physical, spell, tank)
+/rabu sum avoidhasblock : Enable to include block chance in Avoidance summary, Disable for only dodge, parry, miss
+/rabu sum basic : Choose basic stats for summary
+/rabu sum physical : Choose physical stats for summary
+/rabu sum spell : Choose spell stats for summary
+/rabu sum tank : Choose tank stats for summary
+/rabu sum gem : Auto fill gems in empty sockets
 
 
-# Avoidance diminishing returns
+***********************************
+** Avoidance diminishing returns **
+***********************************
 
 This includes:
 1. Dodge from Dodge Rating, Defense Rating, Agility.
@@ -137,13 +153,13 @@ The following is the result of hours of work gathering data from beta servers an
 4. Direct percentage gains from talents and spells(ex: Evasion) are not affected by DR.
 5. c and k values depend on class but does not change with level.
 
-   Avoidance DR formula and k, C_p, C_d constants derived by Whitetooth (hotdogee [at] gmail [dot] com)
-6. The DR formula: `1 / x' = 1 / c + k / x`
-   * `x'` is the diminished stat before converting to IEEE754.
-   * `x` is the stat before diminishing returns.
-   * `c` is the cap of the stat, and changes with class.
-   * `k` is is a value that changes with class.
-```
+Avoidance DR formula and k, C_p, C_d constants derived by Whitetooth (hotdogee [at] gmail [dot] com)
+6. The DR formula: 1 / x' = 1 / c + k / x
+   x' is the diminished stat before converting to IEEE754.
+   x is the stat before diminishing returns.
+   c is the cap of the stat, and changes with class.
+   k is is a value that changes with class.
+
              k       C_p      1/C_p      C_d      1/C_d    C_m
 Warrior     0.9560  47.003525 0.021275  88.129021 0.011347 16
 Paladin     0.9560  47.003525 0.021275  88.129021 0.011347 16
@@ -155,8 +171,7 @@ Shaman      0.9880 145.560408 0.006870 145.560408 0.006870
 Mage        0.9830   0        0        150.375940 0.006650
 Warlock     0.9830   0        0        150.375940 0.006650
 Druid       0.9720   0        0        116.890707 0.008555
-```
-```
+
             Lv80 Dodge/Agi Lv80 Agi/1%Dodge Base Agi
 Warrior       0.011800       84.74576271    3.66400
 Paladin       0.016700       59.88023952    3.49430
@@ -168,9 +183,11 @@ Shaman        0.016700       59.88023952    2.10800
 Mage          0.017000       58.82352941    3.65870
 Warlock       0.016700       59.88023952    2.42110
 Druid         0.020900       47.84688995    5.60970
-```
 
-# How I derived the Rating Formula
+
+**************************************
+** How I derived the Rating Formula **
+**************************************
 
 As soon as I saw the blue post on combat ratings system, I began to think about coding this addon.
 But Blizzard only gave us level 60 and 70 data about this system, and for an addon like this to work you need exact formula that will work for all levels.
@@ -179,12 +196,11 @@ So I need to reverse engineer the Combat Rating formula, and the process of obta
 1. Get more data
 In order to obtain the exact formula, I will need more data points then just level 60 and 70. So I logged on and started asking random people about their crit% and crit ratings show in the Character frame, the problem was the crit% shown only has 2 two decimal places, which turned out to be insufficient for this matter.
 
-So I started to dig in the DefaultUI lua files in search for a new API that will give a more precise crit% and I came up with this script `/script DEFAULT_CHAT_FRAME:AddMessage(GetCombatRatingBonus(9))`.
+So I started to dig in the DefaultUI lua files in search for a new API that will give a more precise crit% and I came up with this script /script DEFAULT_CHAT_FRAME:AddMessage(GetCombatRatingBonus(9)).
 
 Now I need to log on again and ask random people to type that script and tell me that 13 decimal place crit% that it shows. This was not an easy task, as most people are unfamiliar with lua script, there are even people that immediately put me on ignore after I sent him this script lol.
 
 After hours of work, this is what I got:
-```
 A   B    C      D               E               F   G           H
 Lv  Type Rating Percentage      =C/D         60base =E/F        =1/G
 19  crit    2   0.6753247631    2.9615380764    14  0.211538434 4.727273342
@@ -206,17 +222,15 @@ Lv  Type Rating Percentage      =C/D         60base =E/F        =1/G
 66  sp_hit  48  4.6829268293    10.2500000000   8   1.28125     0.780487805
 67  crit    78  4.1445989933    18.8196735382   14  1.344262396 0.743902383
 67  crit    76  4.0383272242    18.8196735382   14  1.344262396 0.743902383
-```
 
 2. Think very hard
 After some creative thinking, this is what I got:
-```
+
 Percentage = Rating / F * H
 Lv 8 to 60: 1/H = 1/52 * Level - 8/52
 Lv 60 to 70: H = -3/82 * Level + 131/41
 Lv 70 to 80: H = 82/52 * (131/63)^((Level - 70) / 10)
-```
-```
+
                     F=
 Expertise           2.5
 Defense             1.5
@@ -231,13 +245,14 @@ Spell Crit         14.0
 Spell Haste        10.0
 Resilience         28.75
 Armor Penetration  3.756097412
-```
+
 This formula is correct to the 13th decimal place, so I'm 100% sure this is what blizzard uses.
 
 
-# Stat Conversion Data for Reference
+****************************************
+** Stat Conversion Data for Reference **
+****************************************
 (Patch 3.2.0 Data)
-```
             Combat rating needed for 1 point of stat   
    Expt Def  Dodge Parry Block M-Hit S-Hit  Crit Resil Haste  ArP
 1  0.10 0.75  6.90  6.90  2.50  0.38  0.31  0.54 14.38  0.38  0.14  
@@ -321,8 +336,7 @@ This formula is correct to the 13th decimal place, so I'm 100% sure this is what
 79 7.62 4.57 42.06 42.06 15.24 30.48 24.38 42.67 87.62 30.48 11.45 
 80 8.20 4.92 45.25 45.25 16.39 32.79 26.23 45.91 94.27 32.79 12.32 
    Expt Def  Dodge Parry Block M-Hit S-Hit  Crit Resil Haste  ArP
-```
-```
+
                   Agility needed for 1% Crit
     War   Pal   Hun   Rog   Pri   DK    Sha  Mage  Lock   Dru
 1   3.87  4.62  3.52  2.23 10.96  3.87  9.62 12.94  8.41  7.92
@@ -406,8 +420,7 @@ This formula is correct to the 13th decimal place, so I'm 100% sure this is what
 79 58.14 48.54 77.52 77.52 48.31 58.14 77.52 47.85 47.17 77.52
 80 62.50 52.08 83.33 83.33 52.08 62.50 83.33 51.02 50.51 83.33
     War   Pal   Hun   Rog   Pri   DK    Sha  Mage  Lock   Dru
-```
-```
+
         Intellect needed for 1% Spell Crit
      Pal    Hun    Pri    Sha   Mage   Lock    Dru
 1   12.02  14.31   5.85   7.50   6.11   6.67   6.99
@@ -491,12 +504,14 @@ This formula is correct to the 13th decimal place, so I'm 100% sure this is what
 79 153.85 153.85 153.85 153.85 153.85 153.85 153.85
 80 166.67 166.67 166.67 166.67 166.67 166.67 166.67
      Pal    Hun    Pri    Sha   Mage   Lock    Dru
-```
-# Spirit-Based Mana Regeneration Formula
+
+********************************************
+** Spirit-Based Mana Regeneration Formula **
+********************************************
 (Patch 3.2.0 Data)
 
-`ManaRegen(SPI, INT, LEVEL) = (0.001 + SPI * BASE_REGEN[LEVEL] * (INT^0.5)) * 5`
-```
+ManaRegen(SPI, INT, LEVEL) = (0.001 + SPI * BASE_REGEN[LEVEL] * (INT^0.5)) * 5
+
 BASE_REGEN[LEVEL]=
 1  0.020979  21 0.011840  41 0.008235  61 0.006421
 2  0.020515  22 0.011494  42 0.008113  62 0.006314
@@ -518,9 +533,11 @@ BASE_REGEN[LEVEL]=
 18 0.012832  38 0.008581  58 0.006747  78 0.003708
 19 0.012475  39 0.008457  59 0.006667  79 0.003522
 20 0.012073  40 0.008338  60 0.006600  80 0.003345
-```
 
-# TODO
+
+**********
+** TODO **
+**********
 Readme:
 Combat rating needed for 1 point of stat: parry needs to be updated
 
@@ -556,7 +573,9 @@ Try to fix mana oil enchants: was unable to find a way to scan the oil text
 if select(2, GetBuildInfo()) >= "9061" then
 
 
-# Version History
+*********************
+** Version History **
+*********************
 1.6.5
 - New: Support for 4.2.0
 - New: Death knights, paladins, and warriors no longer receive any bonus to their chance to dodge from Agility. Their base chance to dodge is now a fixed 5%.
@@ -568,7 +587,6 @@ if select(2, GetBuildInfo()) >= "9061" then
 - Fix: Doesn't error on tooltips with a lot of lines
 - Fix: Don't show ItemID by default
 - Fix: Removed Reforging UI loaded debug text
-
 1.6.4
 - New: Option to replace Blizzard Item Level with RatingBusters colored Item Level and Item ID
 - New: Option to Enable Subtract Equipped Stats for calculation of mana regen from intellect and spirit, and diminishing stats like dodge, parry, resilience. Replaces the old option to Enable Avoidance Diminishing Returns.
@@ -592,21 +610,17 @@ if select(2, GetBuildInfo()) >= "9061" then
 - Death Knight: Unholy Might: Reduced to a 5% Strength increase, down from 10%.
 - Hunter: Hunting Party: Increases your total Agility by an additional 2%.
 - Rogue: Vitality: Increases your Attack Power by 25%.
-
 1.6.3
 - New: StatSummary: Protection Warriors and Paladins now shows Block Chance from Mastery
-
 1.6.2
 - Fixed: Error on Regorge UI
 - Fixed: Bonus armor calculation on cloaks
-
 1.6.1
 - New: Rating conversion support for Reforge UI
 - Fixed: Druid: Bear Form armor formula
 - Added: Dalaran Brilliance: Spell Power increased by 6%
 - Fixed: Heart of the Wild: Rank 3 gives you 6% Int, not 60%
 - Localizations: koKR by 7destiny, ruRU by Stinger Soft, deDE by cremor
-
 1.6.0
 - Support for 4.0.1 formulas, refer to my post at EJ for formula changes: http://elitistjerks.com/f15/t29453-combat_ratings_level_85_cataclysm
 - Support for Mastery Rating
@@ -785,7 +799,6 @@ if select(2, GetBuildInfo()) >= "9061" then
 - 4.0.1: General: Greater Blessing of Kings: Removed
 - 4.0.1: General: Blessing of Sanctuary: Removed
 - 4.0.1: General: Greater Blessing of Sanctuary: Removed
-
 1.5.1
 - Support new API changes in LibStatLogic-1.1
 1.5.0
@@ -794,14 +807,12 @@ if select(2, GetBuildInfo()) >= "9061" then
 - Stat Breakdown: Show MP5 from Int will now show effects from Replenishment
 - Stat Summary: Added Expertise Rating Summary
 - Localization updates
-
 1.4.9
 - Update for 3.3.3
 - Use /rabu for commands, since /rb is now used by the blizzard interface to launch the new raid browser window.
 - 3.3.3: Death Knight: Endless Winter: Grants 2/4% strength.
 - 3.3.3: Death Knight: Unbreakable Armor: The amount of strength granted is now 20%, up from 10%.
 - 3.3.3: Warrior: Vitality: Now boosts Stamina by 3/6/9%
-
 1.4.8
 - Update for 3.3.0
 - NEW: Rating Conversion, Stat Breakdown, Stat Summary can each be set to show on ALT, SHIFT, CTRL, Always, or Never.
@@ -810,12 +821,11 @@ if select(2, GetBuildInfo()) >= "9061" then
 - Warlock: Fixed Demonic Knowledge calculations
 - Warlock: Added Glyph of Life Tap
 - Mage: 2pc Tier 9 support
-- 3.2.2: Paladin: Touched by the Light: This talent now provides 20/40/60% of the paladinï¿½ï¿½s strength as spell power instead of 10/20/30% of the paladinï¿½ï¿½s stamina.
+- 3.2.2: Paladin: Touched by the Light: This talent now provides 20/40/60% of the paladin¡¦s strength as spell power instead of 10/20/30% of the paladin¡¦s stamina.
 - 3.2.0: Warrior: Armored to the Teeth: This talent now provides 1/2/3 attack power per 108 armor, up from per 180 armor.
 - Change options text style to match Blizzard options
 - Optimized checking of unusable items
 - Locale updates
-
 1.4.7
 - NEW: Option to ignore prismatic sockets
 - LibDualSpec-1.0 now optional, can be deleted if not needed.
@@ -828,7 +838,6 @@ if select(2, GetBuildInfo()) >= "9061" then
 - Bug Fixes
 - Mage: Removed Arcane Instability: Does not increase spell power
 - Fixed Dodge from Agi formula
-
 1.4.6
 - NEW: Option to enable dual profile support, will automatically swap profiles on talent switch when enabled.
 - NEW: Option to disable Blizzard's stat change summary.
@@ -837,7 +846,6 @@ if select(2, GetBuildInfo()) >= "9061" then
 - No longer displays "query server" message on invalid gem input, and will correctly inform user of invalid input.
 - Setting default gems in colorblind mode now works correctly
 - Paladin: Fixed Touched by the Light detection
-
 1.4.5
 - Updated for 3.2.0
 - Fixed Resilience formula for levels 1 to 34
@@ -862,7 +870,6 @@ if select(2, GetBuildInfo()) >= "9061" then
 - Shaman: Updated Ancestral Healing: The buff from this ability now reduces the physical damage taken by the target by 3/7/10% instead of increasing the target's armor.
 - Shaman: Updated Unleashed Rage: Reduced to 3 points, down from 5.
 - Warlock: Updated Demonic Embrace: Now a 3 point talent, down from 5 points.
-
 1.4.4
 - StatBreakdown now shows Armor to AP for Armored to the Teeth(Warrior) and Bladed Armor(Death Knight)
 - Better support for 3.0.8 bonus armor changes
@@ -884,7 +891,6 @@ if select(2, GetBuildInfo()) >= "9061" then
 - Priest: Added Talent: Improved Power Word: Fortitude: Now also increases your total stamina by 2/4%. 
 - Priest: Updated Talent: Meditation: Now grants 17/33/50% of mana regeneration while casting. 
 - Shaman: Updated Talent: Toughness: No longer increases your armor. Instead, this talent now increases your total stamina by 2/4/6/8/10%. 
-
 1.4.3
 - Now uses Ace3
 - Partial support for 3.0.8 bonus armor changes
@@ -895,7 +901,6 @@ if select(2, GetBuildInfo()) >= "9061" then
 - Shaman: Fixed Talent: Unrelenting Storm is now 3 ranks
 - Changed base stat mods to compute multiplicatively 
 - Updated localizations
-
 1.4.2
 - Chance to be missed diminishing returns now supported
 - Rating conversion and StatSummary sum now supports avoidance diminishing returns too
@@ -924,7 +929,6 @@ if select(2, GetBuildInfo()) >= "9061" then
 - Use LibStatLogic-1.1 and LibTipHooker-1.1
 - Updated localizations: Russian, Spanish, Taiwan, China, French, German, Korean
 - Code cleanup
-
 1.4.1
 - Increase /rb level option max value to 83
 - Avoidance diminishing returns support for /rb sum avoidance
@@ -937,7 +941,6 @@ if select(2, GetBuildInfo()) >= "9061" then
 - Paladin: Added Talent: Redoubt - Increases your block value by 10%/20%/30%
 - Death Knight BaseDodge changed from 0.758% to 3.4636%.
 - Updated localizations: Taiwan, French, Russian, German, Korean
-
 1.4.0
 - Updated toc to 30000, this versions is compatible with both TBC and WotLK
 - Fixed: when removing gems it will continue to show the gem text in empty sockets
@@ -1061,35 +1064,29 @@ Druid
 - Fixed: Mage - Arcane Fortitude (50% -> 100% Armor from Int)
 - Optimized library usage
 - Updated localizations 
-
 1.3.7a
 - Fixed: Loading error
-
 1.3.7
 - Changed: Will only show stat breakdown options your class can use
 - Changed: Class specific stat breakdown options will show the talents required
 - Added: Stat breakdown support for Mental Quickness (Shaman)
 - Fixed: Support for new Demonic Knowledge(Warlock) and Nurturing Instinct(Druid)
 - Fixed: Library errors
-
 1.3.6
 - Updated toc to 20400
 - Fixed: Able to clear default gem settings
 - Fixed: Deadly Fire Opal now shows rating conversion
-
 1.3.5
 - NEW: Default gems for empty sockets! Set the gems to use for each socket using /rb sum gem
 - In 2.4.0: Spirit-Based Mana Regeneration: This system has been adjusted so that as your intellect rises, you will regenerate more mana per point of spirit.
 - Fixed: Will now work with [Insightful Earthstorm Diamond]
 - Fixed: Profiles should now work
 - Changed: Use "/rb win" to open the options window instead of "/rb optionswin"
-
 1.3.1
 - Fixed: Spell Haste summary works now
 - Fixed: Doesn't match percentages anymore (ex: Increases healing by up to 10% of your total Intellect)
 - Fixed: Error when sorting StatSummary alphabetically
 - Updated localizations: Taiwan, French, China, German, Spanish
-
 1.3.0
 - Updated: TOC to 20300
 - Updated localizations: Taiwan, Korean, China, German
@@ -1114,11 +1111,9 @@ Druid
   DodgeRating
   ParryRating
   BlockRating
-
 1.2.8
 - Fixed: +X Spell Power gives healing too
 - In 2.3.0: Support for Spell Damage bonus in +Healing stats
-
 1.2.7
 - NEW: Option to Show detail text for Resilience and Expertise conversions
 - NEW: Option to Show Avoidance Summary <- Dodge, Parry, MobMiss
@@ -1132,10 +1127,8 @@ Druid
 - In 2.3.0: Mental Quickness (Shaman Enhancement talent) now also increases spell damage and healing equal to 10/20/30% of your attack power
 - All 2.3.0 Changes will only take affect when using a 2.3.0 client.
 - Updated: German localization
-
 1.2.6
 - Fixed: Ranged AP Calculations
-
 1.2.5
 - Updated: toc to 20200
 - Fixed: Haste rating change in 2.2.0
@@ -1147,39 +1140,32 @@ Druid
 - Updated: German localization by Dleh
 - Code optimizations
 - Updated: Libs
-
 1.2.4
 - Fixed: Error when difftype is set to comp
 - Made Waterfall-1.0 optional
-
 1.2.3
 - NEW: You can now open the options window using /rb optionswin
 - Updated Taiwan localization
 - Updated Korean localizations by fenlis
-
 1.2.2
 - New option to hide the StatSummary title
 - New option to hide the sigma icon in the StatSummary title
 - New option to add a empty line after the StatSummary
 - Updated Taiwan localization
 - Other localizations needs to be updated
-
 1.2.1
 - Updated Taiwan localization
 - Improved stat scanning
 - Updated German localization
-
 1.2.0
 - Updated French localization by Tixu and Silaor, now supports StatSummary
 - Fixed a bug causing StatSummary not showing correctly for languages other then English
 - Fixed Parry/SpellHaste rating conversions
 - Updated libs
-
 1.1.9
 - Pre updated the TOC to 2.1.0
 - Improved the Sigma icon
 - Updated readme file
-
 1.1.8
 - StatSummary: "Mana Regen while Not casting" now shows the correct value
 - StatSummary: "Health Regen while Out of Combat" now shows the correct value
@@ -1188,42 +1174,35 @@ Druid
 - Added support for Human +10% Spirit Racial
 - Fixed StatLogic line 6285 strfind error (thanks to everyone that helped)
 - Updated Korean localizations by fenlis
-
 1.1.7
 - Minor bug fixes
 - Updated Taiwan localizations by mcc
 - Updated Korean localizations by fenlis
 - Updated French localizations by renchap
-
 1.1.6
 - Stat Summary now has the option to show resistances
 - Fixed Feral Attack Power name
 - /rb sum ignore unused now shows leather for hunters
 - Fixed an error when mousing over items that goes into a slot you currently have no equipment in when you have the ignore enchant or gem option on
-
 1.1.5
 - Fixed MP5NC, HP5OC summary
 - Changed default diff style from comp to main, since not everyone uses a compare addon
 - Attempt to fix some more funny bugs
-
 1.1.4
 - Option to display Weapon Max Damage in summary
 - Improved option for ignoring enchants and gems, they are now 2 different options
 - Fixed some classes not showing summary for cloaks
 - Fixed incorrect shield diffs
 - Improved diff style code should fix funny errors
-
 1.1.3
 - Fixed EQCompare, tekKompare support
 - Updated Taiwan localizations
-
 1.1.2
 - Option to Display diff values in the main tooltip or only in compare tooltips for readability
 - Option to Ignore enchants and gems on items when calculating the stat summary
 - /rb sum ignore unused now shows all armor types they are use for druids, paladins and shamans
 - Updated Taiwan localizations
 - Code clean up
-
 1.1.1
 - Option to Show stat summary only for highest level armor type and items you can use with uncommon quality and up
 - Option to Hide stat summary for equipped items
@@ -1231,7 +1210,6 @@ Druid
 - Mage, Warlock, Shaman now shows spellcrit as default summary instead of crit 
 - Updated Taiwan localizations
 - Minor bug fixes
-
 1.1.0
 - NEW: Stat Summary - Display the sum of stats of the item and/or the stat difference of the item and your equipped items
 - Choose the stats you really care about to be show in the summary
@@ -1246,7 +1224,6 @@ Druid
 - Fixed locale registering twice error
 - Fixed mp5 and hp5 calculations for Shaman, Druid, Mage, Warlock
 - Agi -> Dodge only works for your current level, for best results turn off /rb usereqlv, and set /rb level 0
-
 1.0.0
 - Support for talents and buffs that modify your stats
 - Supports the following stat conversions
@@ -1256,154 +1233,116 @@ Druid
 - Int -> Mana, SpellCrit, SpellDmg(Talent), Healing(Talent), MP5(Talent), RAP(Talent), Armor(Talent)
 - Spi -> MP5(Talent), MP5NC, HP5, SpellDmg(Talent), Healing(Talent)
 - If you need a GUI config window for RatingBuster, use Niagara (Download at: http://files.wowace.com/)
-
 0.9.5
 - Fixed library error
-
 0.9.4
 - Added Taiwan localizations by CuteMiyu
-
 0.9.3
 - Updated Korean localization by kcgcom
-
 0.9.2
 - Code clean up
 - Finally removed Compost
-
 0.9.1a
 - Really fixed locales
-
 0.9.1
 - Fixed locales
 - Added Korean localization by kcgcom
-
 0.9.0
 - Optimized parsing algorithm to use fewer resources
 - showCritFromAgi and showSpellCritFromInt will now correctly save as per class data
 - /rb level will now save
 - No longer scans buffs
 - Code clean up
-
 0.8.6
 - tekKompare support
 - Sniff support
-
 0.8.5
 - AtlasLoot support
 - ItemMagic support
 - Fixed line 785 error
-
 0.8.4
 - Spell Crit from Intellect defaults off for Hunters too
-
 0.8.3
 - Fixed color picker bug
 - Updated French localization (Tixu)
-
 0.8.2
 - Fixed % signs showing before some periods bug
-
 0.8.1
 - Option to enable colored text (/rb color)
 - Fixed Defense showing the % sign bug
 - Fixed Haste Rating conversion
 - Updated French localization (Tixu)
-
 0.8.0
 - Option to show Crit from Agility, Ex: "+15 Agility (+0.72% Crit)"
 - Option to show Spell Crit from Intellect, Ex: "+23 Intellect (+0.35% Spell Crit)"
 - Support for "grant you xx stat" type pattern, ex: Quel'Serrar, Assassination Armor set
 - "+14 (1.21%) Rating" type strings changed to "+14 Rating (+1.21%)"
 - Recoded tooltip scanner is now more easily extendable and has support for multiple separators for better accuracy.
-
 0.7.6
 - The amount of haste granted by a point of haste rating has been increased by 50% (Patch 2.0.7)
 - Fixed Mutltitips support
 - Minor code tweaks
-
 0.7.5
 - Fixed double conversion bug
 - Fixed GetItem error
 - Support for Hit Avoidance Rating (assuming its the same as melee Hit Rating)
-
 0.7.1
 - Fixed a hooking bug
-
 0.7.0
 - Now uses the OnTooltipSetItem script handler instead of hooking all the SetX methods,
   this combined with the new Tooltip:GetItem() method should also fix problems where
   RatingBuster doesn't always work, like at the mailbox.
-
 0.6.6
 - MultiTips support
-
 0.6.5
 - LinkWrangler support
-
 0.6.4
 - Updated Libs
-
 0.6.3
 - Use Required Level defaults to true
 - Support for EQCompare
 - Changed toc to 20003 for TBC (It will show up as out-of-date until TBC goes live, enable loading out-of-date to load it)
-
 0.6.2
 - Added German localization by Runenstetter@Nathrezim.EU
 - Fixed French localization
-
 0.6.1
 - Added French localization by Tixu
-
 0.6
 - Added option to calculate using the required level if you are below the required level
 - Redesigned the tooltip scanner to be more locale friendly, should be easier to do translations now.
-
 0.5.1
 - Fixed line 457 error
-
 0.5
 - Improved ItemLevel and ItemID algorithm, will now work on most tooltips
 - Updated Libs
-
 0.4.3
 - Fixed line 499 error
 - Temporarily removed ItemLevel and ID support for Bagnon, working on a better implementation
-
 0.4.2
 - Fixed a rare error in line 487
 - Updated Libs
-
 0.4.1
 - Inspect frame support for ItemLevel and ItemID
 - Two-Handed skill ratings now works
-
 0.4
 - Bagnon support for ItemLevel and ItemID
 - Fixed some errors
 - Updated libs
-
 0.3.2
 - Fixed auction house bug
-
 0.3.1
 - Fixed keyring bug
-
 0.3
 - Works with enchant links
 - Works with keyring items
-
 0.2.1
 - Fixed AceConsole error
-
 0.2
 - Simplified the localization file for easier localization
 - Added keyword "spell crit"
 - Added Item Level, Item ID support for profession trainer items
 - Set Debugging to false
-
 0.1.1
 - Removed AceHook2.1 cause it was causing problems with other Ace2 addons
-
 0.1
 - Initial release
