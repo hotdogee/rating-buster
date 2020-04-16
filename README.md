@@ -2,6 +2,10 @@
 
 Item stat breakdown, analysis and comparison
 
+🔥 CurseForge: https://www.curseforge.com/wow/addons/rating-buster
+
+🔥 WoWInterface: https://www.wowinterface.com/downloads/info5819-RatingBuster.html
+
 # About Combat Ratings
 
 The Burning Crusade introduces a new stat called Combat Ratings, any combat stat that previously was percentage-based such as: critical strike chance, hit chance, dodge chance and defense skill, are now displayed as ratings to the players. These ratings can be a pain when you want to compare 2 different items, is 30 hit rating better or 20 crit rating? thats why I created Rating Buster.
