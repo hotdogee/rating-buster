@@ -2,6 +2,14 @@
 
 Item stat breakdown, analysis and comparison
 
+# About Combat Ratings
+
+The Burning Crusade introduces a new stat called Combat Ratings, any combat stat that previously was percentage-based such as: critical strike chance, hit chance, dodge chance and defense skill, are now displayed as ratings to the players. These ratings can be a pain when you want to compare 2 different items, is 30 hit rating better or 20 crit rating? thats why I created Rating Buster.
+
+Unlike fixed percentages such as 2% critical strike chance, combat ratings diminish in potency as your character increases in level. 2% crit is the same at every level, while 28 critical strike rating grants 4% crit at level 34, 2% crit at level 60, and 1.27% crit at level 70.
+
+More info can be found here: http://www.wowwiki.com/Combat_Rating
+
 # About RatingBuster
 
 RatingBuster started out as an addon that converts combat ratings in your tooltips into percentages, so that you have more meaningful information when comparing different items.
@@ -11,7 +19,7 @@ The design aim of RatingBuster is to provide detailed, meaningful and customizab
 # Support Modules
 
 - RatingBuster_AlwaysBuffed: http://wow.curse.com/downloads/wow-addons/details/ratingbuster-alwaysbuffed.aspx
-  This addon enables RatingBuster to calculate selected buff effects even if you don't really have them.
+  This addon enables RatingBuster to consider the effects of selected buffs in the conversion even if the buffs are not currently active.
 
 # Features
 
