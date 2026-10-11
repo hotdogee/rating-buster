@@ -852,6 +852,7 @@ Druid
 - Removed AceHook2.1 cause it was causing problems with other Ace2 addons
 
 0.1
+- Initial release
 
 ## Slash commands in RatingBuster 1.x
 
