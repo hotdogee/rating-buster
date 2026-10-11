@@ -42,8 +42,8 @@ L["Disable Blizzard stat change summary when using the built-in comparison toolt
 L["Enable Stat Mods"] = "屬性加成"
 L["Enable support for Stat Mods"] = "啟用屬性加成計算"
 -- /rb avoidancedr
-L["Enable Avoidance Diminishing Returns"] = "啟用迴避遞減效應"
-L["Dodge, Parry, Hit Avoidance values will be calculated using the avoidance deminishing return formula with your current stats"] = "你的閃避、招架、避免命中值會被計算在迴避遞減效應中"
+--L["Enable Avoidance Diminishing Returns"] = "啟用迴避遞減效應"
+--L["Dodge, Parry, Hit Avoidance values will be calculated using the avoidance deminishing return formula with your current stats"] = "你的閃避、招架、避免命中值會被計算在迴避遞減效應中"
 -- /rb subtract_equip
 --L["Enable Subtract Equipped Stats"] = "扣掉目前裝備的數值後再計算"
 --L["Enable for more accurate calculation of Mana Regen from Intellect and Spirit, and diminishing stats like Dodge, Parry, Resilience"] = "可以更精確的計算來至智力與精神得回魔，以及計算閃避、招架、韌性等遞減數值"
@@ -393,7 +393,7 @@ L["Ranged Haste Rating Summary"] = "統計遠程加速等級"
 L["Sum Weapon Max Damage"] = "統計武器最大傷害"
 L["Weapon Max Damage Summary"] = "統計武器最大傷害"
 -- /rb sum physical weapondps
-L["Sum Weapon DPS"] = "統計武器DPS"
+--L["Sum Weapon DPS"] = "統計武器DPS"
 --L["Weapon DPS Summary"] = true
 -- /rb sum physical wpn
 L["Sum Weapon Skill"] = "統計武器技能"
