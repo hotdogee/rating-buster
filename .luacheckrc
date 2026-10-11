@@ -10,6 +10,7 @@ exclude_files = {
 	".release/", -- BigWigsMods/packager output
 	"rating-buster/libs/", -- externals fetched by the packager (see .pkgmeta)
 	"rating-buster/Libs/",
+	".lua/", ".luarocks/", ".install/", -- Lua toolchain installed by CI into the workspace
 }
 
 -- Legacy code: these warnings are noise rather than bugs, and fixing them
