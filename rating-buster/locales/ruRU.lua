@@ -292,8 +292,8 @@ L["Calculate the stat difference for the item and equipped items"] = "Рассч
 L["Sort StatSummary Alphabetically"] = "Сортировать статы в алфавитном порядке"
 L["Enable to sort StatSummary alphabetically, disable to sort according to stat type(basic, physical, spell, tank)"] = "Если включено - то по алфавиту, если выключено, то по смыслу (базовые, физические, заклинания, танковые)"
 -- /rb sum avoidhasblock
-L["Include Block Chance In Avoidance Summary"] = "Включать вероятность блока в итоге избежаний"
-L["Enable to include block chance in Avoidance summary, Disable for only dodge, parry, miss"] = "Включать вероятность блока в итоге избежаний, отключение только для уклона, парирования, промоха"
+L["Include Block Chance In Avoidance Summary"] = "Включать вероятность блока в итог избегания"
+L["Enable to include block chance in Avoidance summary, Disable for only dodge, parry, miss"] = "Включать вероятность блока в итог избегания, если выключено - только уклонение, парирование, промах"
 ---------------------------------------------------------------------------
 -- /rb sum basic
 L["Stat - Basic"] = "Статы - базовые"
@@ -506,8 +506,8 @@ L["TankPoints <- Health, Total Reduction"] ="TankPoints <- Здоровье, О�
 L["Sum Total Reduction"] = "Самма общего снижения"
 L["Total Reduction <- Armor, Dodge, Parry, Block, MobMiss, MobCrit, MobCrush, DamageTakenMods"] = "Общее снижение <- Броня, Уклонение, Парирование, Блок, ПромахСущества, КритСущества, MobCrush, DamageTakenMods"
 -- /rb sum tank avoid
-L["Sum Avoidance"] = "Сумма уклонения от удара"
-L["Avoidance <- Dodge, Parry, MobMiss, Block(Optional)"] = "Уклонение от удара <- Уклонение, Парирование, ПромахСущества, Блок(дополнительный)"
+L["Sum Avoidance"] = "Сумма вероятности избегания"
+L["Avoidance <- Dodge, Parry, MobMiss, Block(Optional)"] = "Вероятность избегания <- Уклонение, Парирование, ПромахСущества, Блок (опционально)"
 ---------------------------------------------------------------------------
 -- /rb sum gemset
 L["Gem Set"] = "Набор самоцветов"
