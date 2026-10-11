@@ -392,8 +392,8 @@ L["Ranged Haste Rating Summary"] = "统计远程急速等级"
 L["Sum Weapon Max Damage"] = "统计武器最大伤害"
 L["Weapon Max Damage Summary"] = "统计武器最大伤害"
 -- /rb sum physical weapondps
-L["Sum Weapon DPS"] = "统计武器DPS"
-L["Weapon DPS Summary"] = "武器DPS统计"
+--L["Sum Weapon DPS"] = "统计武器DPS"
+--L["Weapon DPS Summary"] = "武器DPS统计"
 -- /rb sum physical wpn
 L["Sum Weapon Skill"] = "统计武器技能"
 L["Weapon Skill <- Weapon Skill Rating"] = "武器技能 ← 武器技能等级"
