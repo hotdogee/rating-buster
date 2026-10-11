@@ -258,7 +258,7 @@ local function loadLocale(path)
 		gsub = string.gsub, strlower = string.lower, strupper = string.upper,
 		format = string.format, strfind = string.find, strsub = string.sub,
 		pairs = pairs, ipairs = ipairs, type = type, select = select,
-		tostring = tostring, tonumber = tonumber, unpack = unpack or table.unpack,
+		tostring = tostring, tonumber = tonumber,
 	}
 	setmetatable(env, {
 		__index = function(_, name)
