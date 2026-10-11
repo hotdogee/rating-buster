@@ -94,11 +94,13 @@ Rating Conversion
 | Command | What it does | Default |
 | --- | --- | --- |
 | `/rb rating show` | When to show rating conversions: always, only while ALT, CTRL or SHIFT is held, or never | Always |
-| `/rb rating spell` | Show Spell Hit/Haste from Hit/Haste Rating | Off |
-| `/rb rating physical` | Show Physical Hit/Haste from Hit/Haste Rating | Off |
+| `/rb rating spell` | Show Spell Hit/Haste from Hit/Haste Rating | by class |
+| `/rb rating physical` | Show Physical Hit/Haste from Hit/Haste Rating | by class |
 | `/rb rating detail` | Show detailed text for Resilience and Expertise conversions | Off |
 | `/rb rating exp` | Convert Expertise into Dodge Neglect and Parry Neglect | Off |
 | `/rb rating color enable` | Enable colored text (`/rb rating color pick` picks the color) | On |
+
+Spell Hit/Haste is on by default for Druids, Mages, Paladins, Priests, Shamans and Warlocks, and Physical Hit/Haste for Death Knights, Druids, Hunters, Paladins, Rogues, Shamans and Warriors. Both are off for Monks.
 
 Stat Breakdown
 
