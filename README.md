@@ -150,14 +150,16 @@ RatingBuster is translated into these languages. The files are in [`rating-buste
 | --- | --- | --- |
 | English (default) | `enUS.lua` | Whitetooth |
 | German | `deDE.lua` | Kuja |
-| Spanish | `esES.lua` (registers `esMX`) | carahuevo, kaiemg |
+| Spanish (Mexico), partial | `esES.lua` (registers `esMX` only) | carahuevo, kaiemg |
 | French | `frFR.lua` | Tixu, Silaor, renchap |
 | Italian | `itIT.lua` | Rikther |
 | Korean | `koKR.lua` | Slowhand, 7destiny, kcgcom, fenlis |
-| Portuguese (Brazil) | `ptBR.lua` | |
+| Portuguese (Brazil), partial | `ptBR.lua` | |
 | Russian | `ruRU.lua` | Orsana, StingerSoft, Swix |
 | Simplified Chinese | `zhCN.lua` | iceburn, 急云@CWDG, 天下牧@萨格拉斯 |
 | Traditional Chinese | `zhTW.lua` | Whitetooth, CuteMiyu, 小紫, mcc |
+
+The Spanish and Portuguese files only have the number patterns, separators and added tooltip text. Their options menus are in English, and with no `statList` of their own they use the English stat patterns. `esES.lua` registers only `esMX`, so Spain-Spanish (`esES`) clients get English. The added tooltip text in `ptBR.lua` is Spanish, not Portuguese. Translations for these are welcome.
 
 If you can help on localization updates, feel free to send me the fixes and I'll include them in the release:
 
