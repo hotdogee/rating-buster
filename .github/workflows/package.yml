@@ -1,13 +1,14 @@
 name: Package
 
 # Builds the addon zip with BigWigsMods/packager and keeps it as a workflow
-# artifact. On a tag push it also creates a GitHub Release with the zip.
+# artifact. On a tag push the release job also creates a GitHub Release with
+# the zip; only that job gets a token that can write to the repository.
 #
 # CurseForge and WoWInterface uploads are not enabled. To turn them on:
 #   1. Add "## X-Curse-Project-ID: <project id>" (from the "About Project"
 #      box on CurseForge) and "## X-WoWI-ID: 5819" to RatingBuster.toc.
 #   2. Add the CF_API_KEY and WOWI_API_TOKEN repository secrets.
-#   3. Uncomment the two lines in the env block of the release step below.
+#   3. Uncomment the two lines in the env block of the release job below.
 
 on:
   push:
@@ -18,15 +19,17 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write # the packager creates the GitHub Release on tags
+  contents: read
 
 jobs:
   package:
+    if: github.ref_type != 'tag'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
         with:
           fetch-depth: 0 # the packager needs the history and tags for the version and changelog
+          persist-credentials: false
 
       # Most externals in .pkgmeta are svn repositories on wowace.
       - name: Install Subversion
@@ -35,14 +38,37 @@ jobs:
           sudo apt-get install -yq subversion
 
       - name: Package
-        if: github.ref_type != 'tag'
-        uses: BigWigsMods/packager@v2
+        uses: BigWigsMods/packager@e50a250f8705041e40f2fa1ddcb280a686d65aa0 # v2.6.1
         with:
           args: -d -m rating-buster/.pkgmeta
 
+      - uses: actions/upload-artifact@v7
+        with:
+          path: .release/*.zip
+          archive: false # the zip is already the addon package
+          # The packager skips the build when HEAD has a tag that is still to
+          # be pushed, so a missing zip is not an error.
+          if-no-files-found: warn
+
+  release:
+    if: github.ref_type == 'tag'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # the packager creates the GitHub Release
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0 # the packager needs the history and tags for the version and changelog
+          persist-credentials: false
+
+      # Most externals in .pkgmeta are svn repositories on wowace.
+      - name: Install Subversion
+        run: |
+          sudo apt-get update -q
+          sudo apt-get install -yq subversion
+
       - name: Package and release
-        if: github.ref_type == 'tag'
-        uses: BigWigsMods/packager@v2
+        uses: BigWigsMods/packager@e50a250f8705041e40f2fa1ddcb280a686d65aa0 # v2.6.1
         with:
           args: -m rating-buster/.pkgmeta
         env:
@@ -54,6 +80,3 @@ jobs:
         with:
           path: .release/*.zip
           archive: false # the zip is already the addon package
-          # The packager skips the build when HEAD has a tag that is still to
-          # be pushed, so a missing zip is not an error.
-          if-no-files-found: warn
