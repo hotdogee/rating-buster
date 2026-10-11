@@ -46,7 +46,6 @@ end
 ---------------------
 -- Local Variables --
 ---------------------
-local _
 local _, class = UnitClass("player")
 local playerLevel = UnitLevel("player") or 80
 local calcLevel
@@ -1853,7 +1852,7 @@ for i = 1, 5 do
   end
 end
 local function GetStatModNameDiscList(statmod, nameList, discList)
-  local r, g, b, name, _, icon, spellid
+  local r, g, b, name, icon, spellid
   if ClassStatModTable[statmod] then
     for _, entry in pairs(ClassStatModTable[statmod]) do
       -- version checks
@@ -2319,7 +2318,7 @@ function RatingBuster:ADDON_LOADED(event, name)
     return value
   end
   
-  function ReforgeFrame_Update_OldStat()
+  local function ReforgeFrame_Update_OldStat()
 	local stats = {GetReforgeItemStats()}
 	local index = 1
 	local statFrame
@@ -2336,7 +2335,7 @@ function RatingBuster:ADDON_LOADED(event, name)
 	end
   end
   
-  function ReforgeFrame_Update_NewStat()
+  local function ReforgeFrame_Update_NewStat()
     if not ReforgingFrame.srcStat and not ReforgingFrame.srcValue then
 		return
 	end
@@ -2349,7 +2348,7 @@ function RatingBuster:ADDON_LOADED(event, name)
 	
 	for i = 1, #stats, 4 do
 		_, statFrame = ReforgingFrame_GetStatRow(index, false)
-		local name, stat, value, reforgeID = statFrame.info[1], statFrame.info[2], statFrame.info[3], statFrame.info[4]
+		local name, stat, value = statFrame.info[1], statFrame.info[2], statFrame.info[3]
 		if statFrame:GetChecked() then
 			statFrame.Text:SetFormattedText("%s+%s|r %s", GREEN_FONT_COLOR_CODE, FormatReforgeRating(value, stat), name)
 		else
@@ -2360,7 +2359,7 @@ function RatingBuster:ADDON_LOADED(event, name)
   end
   
   -- Now for reforged items, hook ReforgingFrame_Update
-  function ReforgingFrame_Update_Hook()
+  local function ReforgingFrame_Update_Hook()
     if not profileDB.enableReforgeUi then
 		return
 	end
@@ -2427,7 +2426,7 @@ local currentColorCode
 local summaryFunc = {}
 local equippedSum = {}
 local equippedDodge, equippedParry, equippedMissed
-local processedDodge, processedParry, processedMissed, processedInt, processedSpi, processedRes
+local processedDodge, processedParry, processedSpi, processedRes
 
 -- Modifier Keys
 local isModifierKeyDown = {
@@ -2488,8 +2487,6 @@ function RatingBuster.ProcessTooltip(tooltip, name, link, ...)
 		equippedMissed = summaryFunc["MELEE_HIT_AVOID_NO_DR"](equippedSum, "sum", difflink1) * -1
 		processedDodge = equippedDodge
 		processedParry = equippedParry
-		processedMissed = equippedMissed
-    processedInt = equippedSum["INT"] * -1
     processedSpi = equippedSum["SPI"] * -1
     processedRes = (equippedSum["RESILIENCE_RATING"] or 0) * -1
 	else
@@ -2498,7 +2495,6 @@ function RatingBuster.ProcessTooltip(tooltip, name, link, ...)
 		equippedMissed = 0
 		processedDodge = 0
 		processedParry = 0
-		processedMissed = 0
     processedRes = 0
 	end
 	
@@ -3090,7 +3086,6 @@ function RatingBuster:ProcessText(text, tooltip)
 						-----------
 						-- Armor --
 						-----------
-						local statmod = 1
 						if profileDB.enableStatMods then
 							local finalArmor = StatLogic:GetFinalArmor(tooltip, lowerText)
 							if finalArmor then
@@ -3173,14 +3168,6 @@ local armorTypes = {
 
 -- Acts as a cache so we only need to check text color once
 local canUseItemType = {
-}
-
--- Druid: Predatory Strikes 2,10: Increases 7%/14%/20% of any attack power on your equipped weapon.
-local weaponItemEquipLoc = {
-	["INVTYPE_WEAPON"] = true,
-	["INVTYPE_2HWEAPON"] = true,
-	["INVTYPE_WEAPONMAINHAND"] = true,
-	["INVTYPE_WEAPONOFFHAND"] = true,
 }
 
 local summaryCalcData = {
@@ -3855,7 +3842,6 @@ local summaryCalcData = {
 			end
 			return parry + dodge + mobMiss + block
 		end,
-		ispercent = true,
 	},
 }
 if tpSupport == true then
@@ -3918,7 +3904,6 @@ if tpSupport == true then
 			if sumType == "sum" then return nil end
 			-- Item type
 			local itemType = diffTable1.itemType
-			local right
 			-- Calculate current TankPoints
 			local tpSource = {}
 			local TP = TankPoints
